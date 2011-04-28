@@ -64,7 +64,7 @@ noremap <silent> <Plug>WindowToNextTab :<C-U>call <SID>MoveToPrevTab()<CR>
 
 if !exists("g:combine_tabs_no_mappings") || ! g:combine_tabs_no_mappings
   " Bind keys for Moving Tabs
-  map tN <Plug>WindowToPreTab
-  map tP <Plug>WindowToNextTab
+  map tP <Plug>WindowToPrevTab
+  map tN <Plug>WindowToNextTab
 end
 
