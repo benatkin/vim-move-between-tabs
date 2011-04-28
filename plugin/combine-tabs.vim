@@ -24,6 +24,8 @@ function MoveToPrevTab()
     if l:tab_nr == tabpagenr('$')
       tabprev
     endif
+    " go to lower right window, to avoid splitting left pane
+    winc "b"
     sp
   else
     close!
@@ -46,6 +48,8 @@ function MoveToNextTab()
     if l:tab_nr == tabpagenr('$')
       tabnext
     endif
+    " go to lower right window, to avoid splitting left pane
+    winc "b"
     sp
   else
     close!
