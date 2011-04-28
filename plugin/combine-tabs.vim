@@ -11,7 +11,7 @@
 "   http://dotfiles.org/~chillu/.vimrc
 
 " Move windows to Adjacent Tabs or Create new Tabs to accomodate them.
-function MoveToPrevTab()
+function s:MoveToPrevTab()
   "there is only one window
   if tabpagenr('$') == 1 && winnr('$') == 1
     return
@@ -33,7 +33,7 @@ function MoveToPrevTab()
   exe "b".l:cur_buf
 endfunc
 
-function MoveToNextTab()
+function s:MoveToNextTab()
   "there is only one window
   if tabpagenr('$') == 1 && winnr('$') == 1
     return
@@ -57,7 +57,7 @@ endfunc
 
 if !exists("g:surround_no_mappings") || ! g:surround_no_mappings
   " Bind keys for Moving Tabs
-  nmap tN :call MoveToNextTab()
-  nmap tP :call MoveToPrevTab()
+  nmap tN :call s:MoveToNextTab()<cr>
+  nmap tP :call s:MoveToPrevTab()<cr>
 end
 
