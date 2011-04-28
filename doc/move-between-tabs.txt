@@ -1,0 +1,27 @@
+*move-between-tabs.txt*  Plugin for moving the current window between tabs
+
+Author:  Ben Atkin <ben@benatkin.com>     *move-between-tabs-author*
+License: Same terms as Vim itself (see |license|)
+
+This plugin is only available if 'compatible' is not set.
+
+INTRODUCTION                               move-between-tabs*
+
+This plugin is for moving the current window between tabs.
+
+To move the buffer from the current window to a window in the 
+previous tab, call `MoveToPrevTab` or use the mapping `tP`.
+
+To move to the next tab, use `MoveToNextTab` or `tN`.
+
+To prevent the mappings from being set, set 
+`g:surround_no_mappings` before the plugin is loaded.
+
+If there is a tab in the direction the buffer is being moved to,
+the current buffer will be added above the bottom right window on
+the adjacent tab.
+
+If there isn't a tab in the direction the buffer is being moved
+to, a new tab will be created.
+
+ vim:tw=78:ts=8:ft=help:norl:

@@ -1,8 +1,8 @@
-" combine-tabs.vim - Combine Tabs
+" move-between-tabs.vim - Move Current Window Between Tabs
 " Author:       Ben Atkin <ben@benatkin.com>
 " Version:      0.1
 "
-" See combine-tabs.txt for help.
+" See move-between-tabs.txt for help.
 "
 " Licensed under the same terms as Vim itself.
 
@@ -62,7 +62,7 @@ endfunc
 noremap <silent> <Plug>WindowToPrevTab :<C-U>call <SID>MoveToPrevTab()<CR>
 noremap <silent> <Plug>WindowToNextTab :<C-U>call <SID>MoveToNextTab()<CR>
 
-if !exists("g:combine_tabs_no_mappings") || ! g:combine_tabs_no_mappings
+if !exists("g:move_between_tabs_no_mappings") || ! g:move_between_tabs_no_mappings
   " Bind keys for Moving Tabs
   map tP <Plug>WindowToPrevTab
   map tN <Plug>WindowToNextTab

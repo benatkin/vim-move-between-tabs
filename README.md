@@ -1,9 +1,9 @@
-# vim-combine-tabs
+# vim-move-between-tabs
 
-This plugin is for combining tabs.
+This plugin is for moving the current window between tabs.
 
 * To move the buffer from the current window to a window in the previous tab, call `MoveToPrevTab` or use the mapping `tP`.
-* To move to the next tab, use MoveToNextTab or tN.
+* To move to the next tab, use `MoveToNextTab` or `tN`.
 * To prevent the mappings from being set, set `g:surround_no_mappings` before the plugin is loaded.
 
 If there is a tab in the direction the buffer is being moved to, the current
