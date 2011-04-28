@@ -57,7 +57,7 @@ endfunc
 
 if !exists("g:combine_tabs_no_mappings") || ! g:combine_tabs_no_mappings
   " Bind keys for Moving Tabs
-  nmap tN :call MoveToNextTab()<cr>
-  nmap tP :call MoveToPrevTab()<cr>
+  map tN :call MoveToNextTab()<cr>
+  map tP :call MoveToPrevTab()<cr>
 end
 
