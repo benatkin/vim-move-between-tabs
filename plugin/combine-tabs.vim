@@ -57,7 +57,7 @@ endfunc
 
 if !exists("g:surround_no_mappings") || ! g:surround_no_mappings
   " Bind keys for Moving Tabs
-  nmap tN :call s:MoveToNextTab()<cr>
-  nmap tP :call s:MoveToPrevTab()<cr>
+  nmap tN <SID>:call s:MoveToNextTab()<cr>
+  nmap tP <SID>:call s:MoveToPrevTab()<cr>
 end
 
